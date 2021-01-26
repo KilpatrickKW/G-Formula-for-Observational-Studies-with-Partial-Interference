@@ -45,9 +45,9 @@ gamma_0alpha_fn<-function(alpha){
   uniroot(integrate_gamma_fn,alpha=alpha,lower=-5,upper=5,extendInt="yes")$root
 }
 
-gamma_0alpha_6_truth<-gamma_0alpha_fn(alpha=0.6)
 gamma_0alpha_4_truth<-gamma_0alpha_fn(alpha=0.4)
 gamma_0alpha_5_truth<-gamma_0alpha_fn(alpha=0.5)
+gamma_0alpha_6_truth<-gamma_0alpha_fn(alpha=0.6)
 
 #find P_alpha(S=s|L)
 p_alpha_s_l<-function(L1,L2,N){
