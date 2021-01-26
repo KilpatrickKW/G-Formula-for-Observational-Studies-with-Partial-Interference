@@ -265,7 +265,7 @@ for (kk in 1:1000){
   # for spillover effect when treated, use:
   #y_model_betas<-glm(Y~L1+S+L2,data=simdataset,family="binomial",weights=Ntreat) 
   
-  # for overall effect, use:
+  # for spillover effect when untreated, use:
   #y_model_betas<-glm(Y~L1+S+L2,data=simdataset,family="binomial",weights=Nuntreat) 
   
   beta_0_mle<-y_model_betas$coefficients[[1]] #intercept
