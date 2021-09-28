@@ -95,16 +95,16 @@ e_y_sl<-function(L1,L2,N){
 #---------------------------------------------------------------------------------------
 
 sum_s_alpha_4<-function(L1,L2,N){
-  sum_s_alpha_4_result<-colSums(e_y_sl(L1,L2,N)*matrix(unlist(p_alpha_s_l(L1,L2,N)[2]),nrow=sapply(p_alpha_s_l(L1,L2,N)[2],nrow)))
+  sum_s_alpha_4_result<-colSums(e_y_sl(L1,L2,N)*matrix(unlist(p_alpha_s_l(L1,L2,N)[1]),nrow=sapply(p_alpha_s_l(L1,L2,N)[2],nrow)))
   return(sum_s_alpha_4_result)
 }
 sum_s_alpha_5<-function(L1,L2,N){
-  sum_s_alpha_5_result<-colSums(e_y_sl(L1,L2,N)*matrix(unlist(p_alpha_s_l(L1,L2,N)[3]),nrow=sapply(p_alpha_s_l(L1,L2,N)[3],nrow)))
+  sum_s_alpha_5_result<-colSums(e_y_sl(L1,L2,N)*matrix(unlist(p_alpha_s_l(L1,L2,N)[2]),nrow=sapply(p_alpha_s_l(L1,L2,N)[3],nrow)))
   return(sum_s_alpha_5_result)
 }
 
 sum_s_alpha_6<-function(L1,L2,N){
-  sum_s_alpha_6_result<-colSums(e_y_sl(L1,L2,N)*matrix(unlist(p_alpha_s_l(L1,L2,N)[1]),nrow=sapply(p_alpha_s_l(L1,L2,N)[1],nrow)))
+  sum_s_alpha_6_result<-colSums(e_y_sl(L1,L2,N)*matrix(unlist(p_alpha_s_l(L1,L2,N)[3]),nrow=sapply(p_alpha_s_l(L1,L2,N)[1],nrow)))
   return(sum_s_alpha_6_result)
 }
 
